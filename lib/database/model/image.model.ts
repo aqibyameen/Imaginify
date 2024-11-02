@@ -1,6 +1,5 @@
-import mongoose, { model, models, Schema } from "mongoose";
+import  { model, models, Schema } from "mongoose";
 
-import { Types } from 'mongoose';
 
 export interface IImage extends Document{
   title: string;
@@ -9,7 +8,7 @@ export interface IImage extends Document{
   secureUrl: URL;
   width?: number;
   height?: number;
-  config?: Object;
+  config?: object;
   transformationUrl?: URL;
   aspectRatio?: string;
   color?: string;
